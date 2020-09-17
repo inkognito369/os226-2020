@@ -26,7 +26,7 @@ int main(int argc, char* argv[])
 	char* res_str = NULL;
 	char* w_str = NULL;
 
-	while (fgets(str, sizeof in, stdin))
+	while (fgets(str, sizeof str, stdin))
 	{
 		char* sub_str = strtok_r(str, "\n;", &res_str);
 		while (sub_str != NULL)
